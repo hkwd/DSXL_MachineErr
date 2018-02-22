@@ -1,0 +1,15 @@
+{
+  "type": "canvas/machine-learning-v1",
+  "mime_type": "application/json",
+  "name": "MachineErr_SPSS_complete",
+  "url": "/v1/ml-streams/2d6452b4-4170-4b0d-84ef-9a3edde8ad5e",
+  "properties": {
+    "guid": "2d6452b4-4170-4b0d-84ef-9a3edde8ad5e",
+    "metadata": {
+      "created_at": "2018-02-22T20:27:46.545Z"
+    },
+    "runtime": {
+      "language": "IBM SPSS Modeler"
+    }
+  }
+}
