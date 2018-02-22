@@ -1,0 +1,60 @@
+{
+  "docType" : "pipeline",
+  "version" : "1.0",
+  "inputDocument" : {
+    "runtime" : "scala-spark-2.0.2",
+    "pipeline" : [ {
+      "id" : "nodeADP",
+      "op" : "com.ibm.analytics.wml.features.ADP",
+      "inputDatasets" : [ ],
+      "outputDatasets" : [ "adpOutputDataFrame" ],
+      "params" : {
+        "numericCategoricalCols" : [ ],
+        "nullStringVal" : "$NNUULL",
+        "sampleSize" : 1000,
+        "useFeatureNorm" : true,
+        "featuresCol" : "features",
+        "predictionField" : "prediction",
+        "decodedField" : "nodeADP_class",
+        "autoFieldsDiscovery" : true,
+        "handleInvalid" : "skip",
+        "isClassification" : true,
+        "labelCol" : "ERR_CD_5FUTURE",
+        "maxCategories" : 100,
+        "labelEncodedCol" : "label",
+        "randomSeed" : 5258496,
+        "inputCols" : [ ],
+        "excludedCols" : [ ]
+      }
+    }, {
+      "id" : "nodeEstimator",
+      "op" : "org.apache.spark.ml.classification.DecisionTreeClassifier",
+      "inputDatasets" : [ "adpOutputDataFrame" ],
+      "outputDatasets" : [ "modelOutputDataFrame" ],
+      "params" : {
+        "seed" : 159147643,
+        "featuresCol" : "features",
+        "rawPredictionCol" : "rawPrediction",
+        "maxBins" : 32,
+        "minInstancesPerNode" : 1,
+        "cacheNodeIds" : false,
+        "predictionCol" : "prediction",
+        "probabilityCol" : "probability",
+        "minInfoGain" : 0.0,
+        "maxDepth" : 5,
+        "impurity" : "gini",
+        "checkpointInterval" : 10,
+        "labelCol" : "label",
+        "maxMemoryInMB" : 256
+      }
+    }, {
+      "id" : "DecHolder_d274ff216d2c",
+      "op" : "com.ibm.analytics.wml.features.DecoderHolder",
+      "inputDatasets" : [ "modelOutputDataFrame" ],
+      "outputDatasets" : [ "decoderOutputDataFrame" ],
+      "params" : {
+        "outputCol" : "LabelDecoder_99c368e614d8__output"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "docType" : "pipeline",
+  "version" : "1.0",
+  "inputDocument" : {
+    "runtime" : "scala-spark-2.0.2",
+    "pipeline" : [ {
+      "id" : "nodeADP",
+      "op" : "com.ibm.analytics.wml.features.ADPModel",
+      "inputDatasets" : [ ],
+      "outputDatasets" : [ "adpOutputDataFrame" ]
+    }, {
+      "id" : "nodeEstimator",
+      "op" : "org.apache.spark.ml.classification.DecisionTreeClassificationModel",
+      "inputDatasets" : [ "adpOutputDataFrame" ],
+      "outputDatasets" : [ "modelOutputDataFrame" ]
+    }, {
+      "id" : "DecHolder_d274ff216d2c",
+      "op" : "com.ibm.analytics.wml.features.DecoderHolder",
+      "inputDatasets" : [ "modelOutputDataFrame" ],
+      "outputDatasets" : [ "decoderOutputDataFrame" ]
+    } ]
+  }
+}

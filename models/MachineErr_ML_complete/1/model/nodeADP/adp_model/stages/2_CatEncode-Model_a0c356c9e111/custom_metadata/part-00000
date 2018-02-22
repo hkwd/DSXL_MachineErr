@@ -1,0 +1,1 @@
+{"uid":"CatEncode-Model_a0c356c9e111","numericCatEncFieldName":"catEncode_numeric_CatEncodeTr_5fefac0c7ab6","inputCols":["M_CD","UP_TIIME","POWER","TEMP","POWER_DIFF","TEMP_DIFF","POWER_5MAVG","TEMP_5MAVG"],"featuresCol":"features_catEncoded"}

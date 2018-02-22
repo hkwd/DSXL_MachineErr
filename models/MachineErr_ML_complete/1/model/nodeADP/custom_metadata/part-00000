@@ -1,0 +1,1 @@
+{"uid":"ADP-Transform_9a412dd6779c","featuresCol":"features","labelCol":"ERR_CD_5FUTURE","labelEncodedCol":"label","isClassification":true,"inputCols":["M_CD","UP_TIIME","POWER","TEMP","POWER_DIFF","TEMP_DIFF","POWER_5MAVG","TEMP_5MAVG"]}

@@ -1,0 +1,49 @@
+{
+  "author": "1001",
+  "name": "MachineErr_ML_complete",
+  "features": [{
+    "name": "M_CD",
+    "type": "integer"
+  }, {
+    "name": "UP_TIIME",
+    "type": "integer"
+  }, {
+    "name": "POWER",
+    "type": "integer"
+  }, {
+    "name": "TEMP",
+    "type": "integer"
+  }, {
+    "name": "POWER_DIFF",
+    "type": "integer"
+  }, {
+    "name": "TEMP_DIFF",
+    "type": "integer"
+  }, {
+    "name": "POWER_5MAVG",
+    "type": "double"
+  }, {
+    "name": "TEMP_5MAVG",
+    "type": "double"
+  }],
+  "params": {
+
+  },
+  "algorithmType": "Classification",
+  "isPublished": false,
+  "labelColumns": [{
+    "name": "ERR_CD_5FUTURE",
+    "type": "integer"
+  }],
+  "serialization": "spark",
+  "latestModelVersion": 1,
+  "id": "1519330371947",
+  "algorithm": "MLPipelineModel",
+  "filename": "",
+  "learningType": "Supervised",
+  "createdAt": 1519330371947,
+  "publishedModelVersion": -1,
+  "publishedBy": "",
+  "type": "wml-sparkml-model-1.1",
+  "runtime": "spark-2.0"
+}

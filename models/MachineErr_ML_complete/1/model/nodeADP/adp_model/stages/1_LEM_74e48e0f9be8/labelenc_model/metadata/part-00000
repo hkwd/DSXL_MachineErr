@@ -1,0 +1,1 @@
+{"class":"com.ibm.analytics.wml.features.NumericIndexerModel","timestamp":1519330375708,"sparkVersion":"2.0.2","uid":"DNIM_174478dee4b4","paramMap":{"labels":[{"0.0":0},{"101.0":1},{"202.0":2},{"303.0":3}],"handleInvalid":"skip","inputCol":"ERR_CD_5FUTURE","outputCol":"label"}}

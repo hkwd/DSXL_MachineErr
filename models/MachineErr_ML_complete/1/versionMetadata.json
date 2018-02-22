@@ -1,0 +1,51 @@
+{
+  "modifiedAt": 1519330371947,
+  "description": "エラーコードを予測するSPSSによるモデル",
+  "performanceMetrics": {
+    "weightedTruePositiveRate": 0.992274678111588,
+    "accuracy": 0.992274678111588,
+    "weightedFMeasure": 0.9921714168349014,
+    "classificationMetrics": [{
+      "precision": 0.9901423877327492,
+      "truePositiveRate": 1,
+      "label": 0,
+      "falsePositiveRate": 0.034482758620689655,
+      "recall": 1,
+      "fMeasure": 0.9950467804072648
+    }, {
+      "precision": 1,
+      "truePositiveRate": 0.9565217391304348,
+      "label": 1,
+      "falsePositiveRate": 0,
+      "recall": 0.9565217391304348,
+      "fMeasure": 0.9777777777777777
+    }, {
+      "precision": 1,
+      "truePositiveRate": 0.9915254237288136,
+      "label": 2,
+      "falsePositiveRate": 0,
+      "recall": 0.9915254237288136,
+      "fMeasure": 0.9957446808510638
+    }, {
+      "precision": 1,
+      "truePositiveRate": 0.8928571428571429,
+      "label": 3,
+      "falsePositiveRate": 0,
+      "recall": 0.8928571428571429,
+      "fMeasure": 0.9433962264150945
+    }],
+    "weightedRecall": 0.992274678111588,
+    "created_at": "2018-02-22T20:12:54.298Z",
+    "weightedFalsePositiveRate": 0.026757436732277637,
+    "weightedPrecision": 0.9923508313394036,
+    "confusionMatrix": {
+      "numCols": 4,
+      "numNonZeroes": 7,
+      "numActives": 16,
+      "values": [904, 0, 0, 0, 5, 110, 0, 0, 1, 0, 117, 0, 3, 0, 0, 25],
+      "numRows": 4
+    }
+  },
+  "modelVersion": 1,
+  "modifiedBy": "1001"
+}

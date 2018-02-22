@@ -1,0 +1,1 @@
+{"class":"com.ibm.analytics.wml.features.ADPModel","timestamp":1519330372088,"sparkVersion":"2.0.2","uid":"ADP-Transform_9a412dd6779c","paramMap":{"inputCols":["M_CD","UP_TIIME","POWER","TEMP","POWER_DIFF","TEMP_DIFF","POWER_5MAVG","TEMP_5MAVG"],"labelCol":"ERR_CD_5FUTURE","featuresCol":"features","labelEncodedCol":"label"}}

@@ -1,0 +1,1 @@
+{"class":"com.ibm.analytics.wml.features.adp.CategoryEncoderModel","timestamp":1519330376102,"sparkVersion":"2.0.2","uid":"CatEncode-Model_a0c356c9e111","paramMap":{"inputCols":["M_CD","UP_TIIME","POWER","TEMP","POWER_DIFF","TEMP_DIFF","POWER_5MAVG","TEMP_5MAVG"],"numericCategoricalCols":[],"featuresCol":"features_catEncoded"}}
